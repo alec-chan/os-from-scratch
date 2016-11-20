@@ -1,9 +1,9 @@
 ;
-;Boot sector that prints 'Hello World' using the scrolling teletype BIOS routine
+;Boot sector that prints 'Hello' using the scrolling teletype BIOS routine
 ;
 
 mov ah, 0x00		;set video mode interrupt routine
-mov al, 0x13		;0x10 reads al for video mode 01h=16 colors, 8pages
+mov al, 0x13		;0x10 reads al for video mode 13h=256 colors, 1page
 int 0x10
 
 mov ah, 0x0e		;set high byte of register A to scrolling teletype routine
