@@ -25,7 +25,7 @@
 
     ```
     sudo apt-get install bochs && sudo apt-get install bochs-x
-    echo -e 'floppya: 1_44=os-image , status=inserted\nboot: a' >> bochsrc
+    echo -e 'floppya: 1_44=os-image , status=inserted\nboot: a' >> bochsrc  #ignore if using the config given in this repo
     ```
 
 5. Start bochs
