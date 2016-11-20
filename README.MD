@@ -4,7 +4,7 @@
 
 Currently the directories contain boot sector programs written in x86 assembly. To run these, 
 
-1. install qemu:
+1. install qemu
 
 ```
 sudo apt-get install qemu	#or your distro's equivalent
@@ -25,7 +25,7 @@ cd hello_world
 
 nasm boot_sect_hello_world.asm -f bin -o boot_sect.bin	#compile
 
-qemu boot_sect.bin					#run
+qemu boot_sect.bin							#run
 ```
 
 
