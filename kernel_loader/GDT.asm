@@ -1,5 +1,7 @@
-; GDT
-gdt_start:
+; GDT - the GDT essentially maps out all the memory segments needed for program execution
+; and assigns them certain characteristics
+
+gdt_start:	;placeholder for the start of the GDT for size calculation
 gdt_null:
 	dd 0x0
 	dd 0x0
@@ -28,7 +30,7 @@ gdt_data: 	;data  segment  descriptor
 gdt_end:         	;Add a label for the end of the GDT so that the assembler
 			;can calculate the size of the GDT for the GDT descriptor
 
-gdt_descriptor:
+gdt_descriptor:	;holds information about the gdt
 	dw  gdt_end  - gdt_start  - 1   ; Size of GDT , always  less  one
 					; of the  true  size
 	dd  gdt_start                   ; Start  address  of  GDT
