@@ -1,6 +1,6 @@
-#Simple boot sector that attempts to boot a C kernel in 32-bit pm
+# Simple boot sector that attempts to boot a C kernel in 32-bit pm
 
-##Usage
+## Usage
 
 1. Complie kernel
 
