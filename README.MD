@@ -1,6 +1,6 @@
-#OS From Scratch
+# OS From Scratch
 
-##Usage
+## Usage
 
 Currently the directories contain boot sector programs written in x86 assembly. To run these, 
 
